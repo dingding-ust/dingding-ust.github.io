@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal website">
+  <meta name="theme-color" content="#ffffff">
+  <title>Ding Ding</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Slab:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-row">
+      <a class="site-brand" href="#about" id="brand-name">Ding Ding</a>
+
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page-shell">
+    <section class="profile-section" id="about">
+      <div class="profile-grid">
+        <aside class="profile-side">
+          <div class="profile-photo-frame" id="profile-photo-frame">
+            <img class="profile-photo" id="profile-photo" alt="Profile photo" hidden>
+            <div class="profile-fallback" id="profile-fallback">DD</div>
+          </div>
+          <div class="social-links" id="social-links"></div>
+        </aside>
+
+        <div class="profile-main">
+          <h1 class="page-title" id="page-title">Ding Ding</h1>
+          <p class="profile-meta">
+            <strong id="profile-role"></strong><br>
+            <span id="profile-department"></span><br>
+            <span id="profile-affiliation"></span>
+          </p>
+
+          <div class="bio-copy" id="about-copy"></div>
+
+          <section class="subsection">
+            <h2 class="section-title">Education</h2>
+            <div class="education-list" id="education-list"></div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="publications">
+      <h2 class="section-title">
+        Selected Publications
+        <span class="section-extra" id="publication-extra"></span>
+      </h2>
+      <p class="section-note" id="publication-note"></p>
+      <ol class="publication-list" id="publication-list"></ol>
+    </section>
+
+    <section class="section" id="contact">
+      <h2 class="section-title">Contact</h2>
+      <p class="contact-copy" id="contact-copy"></p>
+      <div class="contact-links" id="contact-links"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p id="footer-note"></p>
+      <p id="footer-credit"></p>
+    </div>
+  </footer>
+
+  <script src="./site.config.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
