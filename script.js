@@ -135,13 +135,13 @@ function renderPublications() {
           <div class="publication-venue"><em>${item.venue}</em></div>
           ${item.note ? `<div class="publication-honor">${item.note}</div>` : ""}
           <div class="publication-links">
-            <button class="publication-link abstract-toggle" type="button" data-target="abstract-${index}">Summary</button>
+            <button class="publication-link abstract-toggle" type="button" data-target="abstract-${index}">Abstract</button>
             ${(item.links || [])
               .map((link) => `<a class="publication-link" href="${link.href}" target="_blank" rel="noreferrer">${link.label}</a>`)
               .join("")}
           </div>
           <div class="publication-abstract" id="abstract-${index}" hidden>
-            <p>${item.summary}</p>
+            <p>${escapeHtml(item.abstract)}</p>
           </div>
         </div>
       </li>
@@ -164,10 +164,10 @@ function setupAbstractToggles() {
       const hidden = target.hasAttribute("hidden");
       if (hidden) {
         target.removeAttribute("hidden");
-        button.textContent = "Hide Summary";
+        button.textContent = "Hide Abstract";
       } else {
         target.setAttribute("hidden", "");
-        button.textContent = "Summary";
+        button.textContent = "Abstract";
       }
     });
   });

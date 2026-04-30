@@ -283,7 +283,11 @@ button {
 }
 
 .publication-badge-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 3px;
+  text-align: center;
 }
 
 .publication-badge,
