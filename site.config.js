@@ -49,12 +49,12 @@ window.siteConfig = {
       ]
     },
     {
-      badge: "arXiv",
+      badge: "ICML",
       year: "2026",
       title: "Stabilizing Reinforcement Learning for Diffusion Language Models",
       authors: "Jianyuan Zhong*, Kaibo Wang*, Ding Ding*, Zijin Feng, Haoli Bai, Yang Xiang, Jiacheng Sun, Qiang Xu",
-      venue: "arXiv preprint, 2026.",
-      note: "",
+      venue: "In the International Conference on Machine Learning, 2026.",
+      note: "Accepted at ICML 2026",
       summary: "StableDRL is a reinforcement learning method for diffusion language models that stabilizes training with unconditional clipping and self-normalized updates.",
       links: [
         { label: "PDF", href: "https://arxiv.org/pdf/2603.06743" },
